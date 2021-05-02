@@ -11,6 +11,12 @@
       src="https://kit.fontawesome.com/6109df2f64.js"
       crossorigin="anonymous"
     ></script>
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Stutern Form</title>
   </head>
   <body>
@@ -19,8 +25,8 @@
         <div class="form-layout">
           <h1>MILESTONE PROJECT</h1>
           <p>Hi there,</p>
-          <p>please fill the form with the relevant data as requested</p>
-          <p class="required">* Required</p>
+          <p>Please fill the form with all relevant data as requested.</p>
+          <p><span class="required">*</span> Required</p>
         </div>
         <div class="form-layout">
           <label for="fname" class="first-name"
@@ -28,6 +34,7 @@
           >
           <br />
           <input
+            required
             type="text"
             id="fname"
             name="firstname"
@@ -40,6 +47,7 @@
           >
           <br />
           <input
+            required
             type="text"
             id="surname"
             name="surname"
@@ -52,13 +60,13 @@
             >Age <span class="required">*</span></label
           >
           <br />
-          <input type="number" id="age" name="age" min="10" />
+          <input required type="number" id="age" name="age" min="10" />
           <br />
           <label for="level" class="level"
             >Class Level <span class="required">*</span></label
           >
           <br />
-          <select name="level" id="level">
+          <select name="level" id="level" required>
             <option id="level" value="100L">100L</option>
             <option id="level" value="200L">200L</option>
             <option id="level" value="300L">300L</option>
@@ -70,6 +78,7 @@
           <label for="club" class="club">Favorite club</label>
           <br />
           <input
+            required
             type="text"
             id="club"
             name="club"
