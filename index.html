@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- FONT AWESOME LINK -->
+    <script
+      src="https://kit.fontawesome.com/6109df2f64.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Stutern Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form">
+        <div class="form-layout">
+          <h1>MILESTONE PROJECT</h1>
+          <p>Hi there,</p>
+          <p>please fill the form with the relevant data as requested</p>
+          <p class="required">* Required</p>
+        </div>
+        <div class="form-layout">
+          <label for="fname" class="first-name"
+            >First Name <span class="required">*</span></label
+          >
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your first name.."
+          />
+
+          <br />
+          <label for="surname" class="surname"
+            >Surname <span class="required">*</span></label
+          >
+          <br />
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Your surname.."
+          />
+        </div>
+
+        <div class="form-layout">
+          <label for="age" class="age"
+            >Age <span class="required">*</span></label
+          >
+          <br />
+          <input type="number" id="age" name="age" min="10" />
+          <br />
+          <label for="level" class="level"
+            >Class Level <span class="required">*</span></label
+          >
+          <br />
+          <select name="level" id="level">
+            <option id="level" value="100L">100L</option>
+            <option id="level" value="200L">200L</option>
+            <option id="level" value="300L">300L</option>
+            <option id="level" value="400L">400L</option>
+            <option id="level" value="500L">500L</option>
+          </select>
+        </div>
+        <div class="form-layout">
+          <label for="club" class="club">Favorite club</label>
+          <br />
+          <input
+            type="text"
+            id="club"
+            name="club"
+            placeholder="Your favorite club"
+          />
+          <br />
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </form>
+      <table id="table">
+        <tr>
+          <th>First Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Class Level</th>
+          <th>Favorite Club</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
