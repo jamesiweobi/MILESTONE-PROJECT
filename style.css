@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   /* background-color: #fefcfb; */
 }
 
@@ -9,7 +10,6 @@
   width: 80%;
   margin: auto;
   margin-top: 40px;
-  font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -35,7 +35,6 @@ label {
 input {
   border-style: none;
   outline: none;
-  border-bottom: 1px solid gray;
   padding-bottom: 5px;
   text-transform: capitalize;
   width: 100%;
@@ -72,9 +71,11 @@ h1 {
   transition: all 0.4s ease-in-out;
   font-weight: bold;
 }
-.btn:hover {
-  background-color: gray;
+.btn-close {
+  outline: transparent;
+  padding: 5px;
 }
+
 /* Table */
 
 #table {
@@ -82,13 +83,15 @@ h1 {
   padding: 8px;
   margin: auto;
   width: 90%;
-  /* visibility: hidden; */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 50px;
+  visibility: hidden;
 }
-
-#table tr:nth-child(even) {
-  background-color: #f2f2f2;
+#table tr {
+  border-radius: 10px;
 }
-
 #table tr:hover {
   background-color: #ddd;
 }
@@ -99,6 +102,9 @@ h1 {
   text-align: left;
   background-color: #0fb5cb;
   color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .visible {
