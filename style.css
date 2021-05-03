@@ -71,6 +71,9 @@ h1 {
   transition: all 0.4s ease-in-out;
   font-weight: bold;
 }
+.btn:hover {
+  background-color: #dad9b1;
+}
 .btn-close {
   outline: transparent;
   padding: 5px;
