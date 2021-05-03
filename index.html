@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="" class="form">
+      <form id="form">
         <div class="form-layout">
           <h1>MILESTONE PROJECT</h1>
           <p>Hi there,</p>
@@ -29,91 +29,73 @@
           <p><span class="required">*</span> Required</p>
         </div>
         <div class="form-layout">
-          <label for="fname" class="first-name"
-            >First Name <span class="required">*</span></label
-          >
+          <label for="fname" id="first-name"
+            >First Name <span class="required">*</span>
+            <input
+              required
+              type="text"
+              name="firstname"
+              placeholder="Your first name.."
+          /></label>
           <br />
-          <input
-            required
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your first name.."
-          />
 
-          <br />
-          <label for="surname" class="surname"
-            >Surname <span class="required">*</span></label
-          >
-          <br />
-          <input
-            required
-            type="text"
-            id="surname"
-            name="surname"
-            placeholder="Your surname.."
-          />
+          <label for="surname" id="surname"
+            >Surname <span class="required">*</span
+            ><input
+              required
+              type="text"
+              name="surname"
+              placeholder="Your surname.."
+          /></label>
         </div>
 
         <div class="form-layout">
-          <label for="age" class="age"
-            >Age <span class="required">*</span></label
+          <label for="age" id="age"
+            >Age <span class="required">*</span
+            ><input
+              required
+              type="number"
+              name="age"
+              min="10"
+              placeholder="How old are you?..."
+          /></label>
+
+          <br />
+          <label for="level" id="level"
+            >Class Level <span class="required">*</span>
+            <select name="level" required>
+              <option id="level" value="100L">100L</option>
+              <option id="level" value="200L">200L</option>
+              <option id="level" value="300L">300L</option>
+              <option id="level" value="400L">400L</option>
+              <option id="level" value="500L">500L</option>
+            </select></label
           >
-          <br />
-          <input
-            required
-            type="number"
-            id="age"
-            name="age"
-            min="10"
-            placeholder="How old are you?..."
-          />
-          <br />
-          <label for="level" class="level"
-            >Class Level <span class="required">*</span></label
-          >
-          <br />
-          <select name="level" id="level" required>
-            <option id="level" value="100L">100L</option>
-            <option id="level" value="200L">200L</option>
-            <option id="level" value="300L">300L</option>
-            <option id="level" value="400L">400L</option>
-            <option id="level" value="500L">500L</option>
-          </select>
         </div>
         <div class="form-layout">
-          <label for="club" class="club">Favorite club</label>
-          <br />
-          <input
-            required
-            type="text"
-            id="club"
-            name="club"
-            placeholder="Your favorite club"
-          />
-          <br />
-          <button class="btn" type="submit">Submit</button>
+          <label for="club" id="club"
+            >Favorite club
+            <input
+              required
+              type="text"
+              name="club"
+              placeholder="Your favorite club"
+          /></label>
+
+          <input value="Submit" id="btn" type="submit" />
         </div>
       </form>
     </div>
     <table id="table">
-      <tr>
-        <th>First Name</th>
-        <th>Surname</th>
-        <th>Age</th>
-        <th>Class Level</th>
-        <th>Favorite Club</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-        <td>50</td>
-        <td>
-          <button class="btn-close"><i class="fas fa-times close"></i></button>
-        </td>
-      </tr>
+      <tbody>
+        <tr>
+          <th>First Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Class Level</th>
+          <th>Favorite Club</th>
+        </tr>
+      </tbody>
     </table>
     <script src="./app.js"></script>
   </body>

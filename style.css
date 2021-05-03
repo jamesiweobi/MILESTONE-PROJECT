@@ -32,7 +32,7 @@ label {
   font-weight: bold;
 }
 
-input {
+input:not(#btn) {
   border-style: none;
   outline: none;
   padding-bottom: 5px;
@@ -42,7 +42,7 @@ input {
   transition: border-bottom 0.4s ease-in-out;
 }
 
-input:focus {
+input:not(#btn):focus {
   border-bottom: 3px solid #0fb5cb;
 }
 select {
@@ -62,26 +62,27 @@ h1 {
   font-weight: bold;
 }
 
-.btn {
+#btn {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
   background-color: #0fb5cb;
   border-style: none;
-  transition: all 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
   font-weight: bold;
+  outline: none;
 }
-.btn:hover {
+#btn:hover {
   background-color: #dad9b1;
 }
-.btn-close {
+#btn-close {
   outline: transparent;
   padding: 5px;
 }
 
 /* Table */
 
-#table {
+table {
   border: 1px solid #ddd;
   padding: 8px;
   margin: auto;
@@ -91,6 +92,9 @@ h1 {
   font-size: 13px;
   margin-bottom: 50px;
   visibility: hidden;
+}
+.show-table {
+  visibility: visible;
 }
 #table tr {
   border-radius: 10px;
