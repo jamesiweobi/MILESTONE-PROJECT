@@ -75,7 +75,7 @@ h1 {
 #btn:hover {
   background-color: #dad9b1;
 }
-#btn-close {
+.delete {
   outline: transparent;
   padding: 5px;
 }
