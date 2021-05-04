@@ -13,27 +13,35 @@ const newTableRow = document.querySelector('#table tbody');
 submit.addEventListener('click', (e) => {
   e.preventDefault();
   table.classList.add('show-table');
-  let userData = {
+  newTableRow.insertAdjacentHTML('beforeend', prepUser());
+  console.log(myJson);
+});
+
+const getUserData = (firstName, surname, age, select, club) => {
+  const userData = {
     firstName: firstName.value,
     surname: surname.value,
     age: age.value,
     select: select.value,
     club: club.value,
   };
+  return userData;
+};
 
+const myJson = [];
+myJson.push(userData);
+const prepUser = () => {
+  const user = getUserData(firstName, surname, age, select, club);
   let tableContent = ` <tr>
-        <td>${userData.firstName}</td>
-        <td>${userData.surname}</td>
-        <td>${userData.age}</td>
-        <td>${userData.select}</td>
-        <td>${userData.club}</td>
+        <td>${user.firstName}</td>
+        <td>${user.surname}</td>
+        <td>${user.age}</td>
+        <td>${user.select}</td>
+        <td>${user.club}</td>
         <td>
           <button class="delete">Delete</button>
         </td>
       </tr>
-
 `;
-
-  newTableRow.insertAdjacentHTML('beforeend', tableContent);
-  console.log(userData);
-});
+  return tableContent;
+};
